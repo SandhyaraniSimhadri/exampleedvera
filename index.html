@@ -1,32 +1,47 @@
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="header">
-    <h1>EDVORA<sup>BETA</sup></h1>
-    <h4>World's first next-gen Learning Experience Platform</h4>
+    <title>Edvora | The Era of Smart Institutions</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="https://public-files.edvora.com/public-updated/favicons/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="stickyDiv">
+      <div class="header">
+        <img src="https://public-files.edvora.com/public-updated/favicons/favicon.ico" alt="icon" class="imageIcon" />
+        <h1 class="headerTitle">Edvora</h1>
+      </div>
+      <div class="prevNextBtnContainer">
+        <button id="prevButton" disabled>
+          < Prev</button>
+            <button id="nextButton" disabled>Next ></button>
+      </div>
     </div>
-    <div class="side">
-        <b class="button"><i>Sign In</i></b><br>
-        <b class="button"><i>Sign Up</i></b>
-        <b class="button"><i>Notifications</i></b>
-        <b class="button"><i>Profile</i></b>
-        <b class="button"><i>Payment</i></b>
-        <b class="button"><i>Settings</i></b>
-        <b class="button"><i>Courses</i></b>
-        <b class="button"><i>completed courses</i></b>
-        <b class="button"><i>certifications</i></b>
+    <div id="dataDiv">
     </div>
-    <div class="footer"><span>
-        <b class="footer1">. Mission</b>  <b class="footer1">. FAQs</b> <b class="footer1">. Contact Us</b> 
-        <b class="footer1">. EULA</b> <b class="footer1">. Terms</b> <b class="footer1">. Privacy</b> 
-        <b class="footer1">. Cookie</b> <b class="footer1">. policy</b> <b class="footer1">. Site Map</b>
-        <b class="footer1">@ ALL RIGHTs are Reserved @2021</b>
+    <div id="loader">Loading...</div>
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div id="modal-content">
+        <span id="close">&times;</span>
+        <p id="subContentTitle"></p>
+        <p id="subContentUrl"></p>
+        <div id="subContentData"></div>
+      </div>
+
     </div>
-</body>
+
+    <div class="footer">
+      Edvora All Rights Reserved &copy;
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+
 </html>
